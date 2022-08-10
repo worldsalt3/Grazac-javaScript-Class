@@ -1,6 +1,7 @@
-let button1 = document.getElementsByClassName('btn');
-  let paragraph = document.getElementById('para')
+let button1 = document.getElementById('btn-1');
+
+let paragraph1 = document.getElementById('para')
 
 button1.addEventListener('click', () => {
-    paragraph
+    paragraph1.style.color = 'blue';
 })
