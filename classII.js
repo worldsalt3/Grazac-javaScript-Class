@@ -84,42 +84,119 @@
 
 
 // Function
-const a  = 10
-const b = 4
+// const a  = 10
+// const b = 4
 
 // const additionOfab = a + b
 
 
-let c  = 3
-let d = 8 
+// let c  = 3
+// let d = 8 
 
-c = 7
-d=10
-let additionOfcd = c + d
-console.log(additionOfcd)
+// c = 7
+// d=10
+// let additionOfcd = c + d
+// console.log(additionOfcd)
 
 
 // console.log(additionOfab)
 
-function addition(arg1, arg2) {
-  return arg1 - arg2;
-};
+// function addition(arg1, arg2) {
+//   return arg1 - arg2;
+// };
 
 
-let result
-function subtraction(num1, num2) {
-  result = num1 - num2
-  return result
-}
+// let result
+// function subtraction(num1, num2) {
+//   result = num1 - num2
+//   return result
+// }
+
+
+// console.log(addition(a, b))
+
+// console.log(subtraction(1, 2))
+// console.log(result)
+
+
+// Conditional statement
+// let benchMark = 18
+
+// let Kenneth = 16
+
+
+// if & else conditional statement
+
+// if ( Kenneth > benchMark || Kenneth <= benchMark) {
+//   console.log('You\'re eligible to be a drunkard')
+// } else {
+//   console.log('grow faster')
+// }
+
+
+
+// AND operator
+// console.log(false && true)
+// console.log(false && false)
+// console.log(true && true)
+// console.log(true && false)
 
 
 
 
+// OR operator
+// console.log(true || true)
+// console.log(true || false)
+// console.log(false || true)
+// console.log(false || false)
 
 
+//Switch, case Statement
+// switch (Kenneth) {
+//   default:
+//      console.log('grow first')
+//      break
+//   case 40:
+//     console.log("You're eligible to be a drunkard")
+//     break
+//   case 10:
+//     console.log('Drink responsively')
+//     break
+//   case 20:
+//     console.log('thhifdabkjfr')
+//     break
+// }
 
-console.log(addition(a, b))
 
-console.log(subtraction(1, 2))
-console.log(result)
+// Loop
 
+// let arr = ['car key', 'house key', 2000, 'Laptop', 'condom', 'wallet', 15000, 1000]
+// let obj = {
+//     firstName: 'Kenneth',
+//     lastName: 'Esscenss',
+//     age: 100,
+//     gender: 'transgender',
+//     height: 5.9
+// }
+
+
+// for Loop
+// for (let i = 0; i < arr.length; i = i + 2) {
+//   console.log(arr[i])
+// }
+
+
+// while Loop
+// let i = 0
+
+// while(i < arr.length) {
+//   console.log(arr[i])
+//   i += 3
+// }
+
+// for in Loop
+// for (items in arr) {
+//     items = Number(items)
+//     items += 2
+//     console.log(items)
+// }
