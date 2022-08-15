@@ -168,16 +168,41 @@
 // }
 
 
-// Loop
 
-// let arr = ['car key', 'house key', 2000, 'Laptop', 'condom', 'wallet', 15000, 1000]
-// let obj = {
+// var obj = {
 //     firstName: 'Kenneth',
 //     lastName: 'Esscenss',
 //     age: 100,
 //     gender: 'transgender',
 //     height: 5.9
 // }
+// Loop
+
+// let arr = ['car key', 'house key', 2000, 'Laptop', 'condom', 'wallet', 15000, 1000]
+
+// let str_1 = "frontend"
+// let str_2 = 'developer'
+
+// let stringLiteral = `I work as a ${str_1} ${str_2}, and I am earning ${obj.age * 2} annually`
+// let string  = 'I work as a ' + str_1 + ' ' + str_2 + 'and I am earning ' + obj.age * 2 + ' annually'
+// console.log(stringLiteral)
+// console.log(string)
+
+
+
+/***************Concatenation********************** */
+// let num_1 = 2
+// let num_2 = 10
+// let num_3 = '14'
+
+// let addition
+// let concatination
+
+
+// addition = num_1 + num_3
+// console.log( typeof addition)
+
+
 
 
 // for Loop
@@ -195,8 +220,63 @@
 // }
 
 // for in Loop
-// for (items in arr) {
-//     items = Number(items)
-//     items += 2
+// for (let items in str) {
 //     console.log(items)
 // }
+
+/* *****************for of Loop**************** */
+// for(let item of str) {
+//     console.log(item)
+// } 
+
+
+// Block Scope
+// {
+//     const car  = 10
+// }
+
+// console.log(car)
+
+
+// function scope
+// function functionScope() {
+//     var examplee = 10
+// }
+
+// console.log(examplee)
+
+
+// HOF
+let a = 12
+let b = 10
+let c
+
+  function multiply(x) {
+    return  c = x  + b
+  }
+
+// let multiply = a => a + b
+
+
+console.log(multiply(a))
+
+
+
+
+// function higherOrderFunction() {
+//    return multiply(2, 4)
+// }
+
+
+// console.log(higherOrderFunction())
+
+
+
+
+// let callBack = higherOrderFunction()
+
+// console.log(callBack(2, 4))
+
+
+
+ 
