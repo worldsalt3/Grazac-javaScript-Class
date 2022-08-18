@@ -230,6 +230,21 @@
 // } 
 
 
+
+
+// {
+//  const isItTrue = true
+// }
+
+
+
+// function example() {
+//    var firstName = 'Kenneth'
+// }
+
+// console.log(isItTrue)
+
+
 // Block Scope
 // {
 //     const car  = 10
@@ -247,28 +262,54 @@
 
 
 // HOF
-let a = 12
-let b = 10
-let c
-
-  function multiply(x) {
-    return  c = x  + b
-  }
-
-// let multiply = a => a + b
-
-
-console.log(multiply(a))
+// let a = 12
+// let b = 10
+// let c
+  
+  
+  // multiply(4)
 
 
 
+ 
+  
+  // let multiply = a => a + b
+  
+  
+  // console.log(multiply(a))
+  
+//   console.log(higherOrderFunction())
 
+// age = 100
+// console.log(age)
+
+
+
+// let lastName, firstName, gender
+// const pi = 3.146
+
+// // console.log(lastName)
+
+
+
+// // HOF
 // function higherOrderFunction() {
-//    return multiply(2, 4)
+//   // HOF
+//    return function multiplyBy2() {
+//      return function evaluate(params) {
+//         return params * 2
+//      }
+//    }
 // }
 
+// let firstHOF = higherOrderFunction()
 
-// console.log(higherOrderFunction())
+// let secondHOF = firstHOF()
+
+
+
+
+// console.log(secondHOF(4))
 
 
 
@@ -278,5 +319,62 @@ console.log(multiply(a))
 // console.log(callBack(2, 4))
 
 
+// IIFE(Immediate invoked function expression)
+// console.log((function evaluate(params) {
+//     return params * 2
+//  })(4))
 
+
+// callbacks
+
+// function evaluation(a, b, callBackFunction) {
+//   return callBackFunction(a, b)
+// }
+
+// const subtraction = function(a, b) {
+//   return a - b
+// }
+
+// var multiply = function(x, y) {
+//    return x * y
+// }
+// console.log(evaluation(5, 6, addition))
+// console.log(evaluation(7, 10, multiply))
+// console.log(evaluation(100, 50,  subtraction))
+  
+
+
+// function addition(param1, param2) {
+//   return param1 + param2
+// }
+
+
+// closure
+
+// let counter = (function () {
+//   let count = 0
+//   return function countit () {
+//     return count += 1
+//   }
+// })()
+
+// let caoch = 'Teh hang'
+
+// caoch = 'zidane'
  
+// console.log(caoch)
+// function nameOfCoach() {
+//   let caoch = 'coode'
+// }
+
+// console.log(count)
+
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+
