@@ -358,6 +358,20 @@
 //   }
 // })()
 
+// let example = (function () {
+//   let dummy = 0
+//   return function evaluate() {
+//     return dummy += 2
+//   }
+// })()
+
+// console.log(example())
+// console.log(example())
+
+
+
+
+
 // let caoch = 'Teh hang'
 
 // caoch = 'zidane'
@@ -376,5 +390,179 @@
 // console.log(counter())
 // console.log(counter())
 // console.log(counter())
+
+
+// classes
+
+// let obj = {
+//   firstName: 'Kenneth',
+//   lastName: 'Hassan',
+//   age: 24,
+// }
+
+
+
+// class UserInfo {
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName, 
+//     this.lastName = lastName,
+//     this.age = age
+//   }
+
+//   fullName (occupation) {
+//     return `My name is ${this.firstName} ${this.lastName} and I'm ${this.age} years old, I work as a ${occupation} `
+//   }
+// }
+
+
+// class UserCredentials {
+//   constructor(username, password, tel) {
+//       this.userName = username,
+//       this.password = password,
+//       this.telephone = tel
+//   }
+// }
+
+// let user1 = new UserInfo('Johnson', 'Oluyemi', 94)
+// let user2 = new UserInfo('Iyo', 'Adedolapo', 20 )
+
+
+// let credential1 = new UserCredentials('worldsalt3', 1234, '+2347474432949')
+
+// console.log(user1)
+// console.log(user2)
+
+// console.log( 
+//   user1.fullName('Frontend Developer')
+//   )
+
+// console.log( user2.fullName('Backend Developer'))
+
+// Advance Array and Object / Array methods and Object methods
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8,  9,  10]
+
+// console.log(arr[0][1][0])
+
+// arr.push(11)
+// arr.unshift(0)
+// let shiftValue = arr.shift()
+// let ourValue = arr.pop()
+// console.log(arr)
+// console.log(shiftValue)
+// console.log(ourValue)
+
+// array map Method
+// let multipliedArr = arr.map((item) => {
+//   return item * 2
+// })
+
+
+// array filter method
+// let evenNumbers = arr.filter(function (item) {
+//     return item % 2 === 0
+// })
+
+// console.log(evenNumbers)
+
+// console.log(arr)
+// console.log(multipliedArr)
+
+// let obj = {
+//   firstName: 'Lola',
+//   lastName: 'Poland',
+//   bag: {
+//     housekey: 7,
+//     carkeys: {
+//       honda: 2,
+//       benz: 4, 
+//       lexus: 6
+//     }
+//   },
+//   age: 98,
+//   fullName: function (occupation) {
+//     return `My name is ${this.firstName} ${this.lastName} and I'm ${this.age} years old, I work as a ${occupation} `
+//   },
+// }
+
+
+// console.log(obj.bag.carkeys.benz)
+// console.log(obj.fullName('Product Designer'))
+
+
+
+// DOM
+// console.log(document.getElementsByTagName('button'))
+// console.log(document.getElementById('btn-1'))
+// console.log(document.getElementsByClassName('paragraph'))
+// console.log(document.querySelector('.paragraph'))
+// console.log(document.querySelectorAll('p'))
+
+
+// let paragraph = document.getElementById('para1-container')
+
+// paragraph.innerHTML = "<img src='' alt='testing' />"
+
+// paragraph.innerHTML = 'It has been changed'
+
+// DOM styling properties
+// let btn = document.querySelector('#btn')
+// btn.style.backgroundColor = 'red'
+// btn.style.color = '#fff'
+// btn.style.border = 'none'
+// btn.classList.remove('btn')
+// btn.classList.add('btn')
+
+// let divContainer = document.querySelector('#para1-container')
+
+
+
+
+
+// function alertFunction() {
+//   alert('Welcome bro!')
+// }
+
+// function createH1Element() {
+// let paragraph = document.createElement('h1')
+// paragraph.innerText = 'this is another element'
+
+// divContainer.appendChild(paragraph)
+// }
+
+// let btn1 = document.getElementById('btn-1')
+
+// btn1.addEventListener('click', createH1Element)
+
+
+
+
+
+// console.log(divContainer.parentElement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
