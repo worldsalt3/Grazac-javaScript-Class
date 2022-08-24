@@ -540,6 +540,68 @@
 
 // console.log(divContainer.parentElement)
 
+// Asynchronous JavaScript
+// setTimeout(() => {
+//   console.log(`Eh!, I've been fired`)
+//   setTimeout(() => {
+//     console.log(`this is our second timeout`)
+//   }, 5000)
+// }, 3000)
+
+
+let paragraph = document.getElementById('para')
+let button = document.querySelector('#btn')
+
+
+
+let is_promise = true
+
+/**********JS Promise*************/ 
+
+// let myPromise = new Promise((resolve, reject) => {
+//   if(is_promise === true) {
+//     resolve('our content will change') // if it is successfull 
+//   } else {
+//     reject((error) => error = 'this is our error message')//if not successfull reject will run
+//   }
+// })
+
+
+// myPromise.then((result) => {
+//   paragraph.innerText = result
+// } )
+
+// myPromise.then(function(result) {
+//   button.innerText = result
+// })
+
+// myPromise.catch((error) => alert(error))
+
+
+
+/********Tenary Operator**********/ 
+// is_promise ? console.log(true) : console.log(false)
+
+
+
+/*************Async / Await *************/ 
+
+// async function myDisplay() {
+
+//   console.log('kjhewrbklrghjer')
+
+//   setTimeout(() => {console.log('I love you')}, 5000)
+
+//   console.log('I am running')
+// }
+
+// myDisplay()
+
+// let myPromise = async () => {
+
+// }
+
+
 
 
 
