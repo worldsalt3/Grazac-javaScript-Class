@@ -607,31 +607,45 @@ let is_promise = true
 
 
 // A function that checks if the user browser supports GPS, also get the current location i.e Latitude and longitude and fetch the weather api with gotten lat & lon
-let getUserLocation = () => {
-  if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(getWeatherAPI)
 
-  }else {
-    alert('Geolocation is not supported by this browser.')
-  }
-}
 
 let apiKey = '3b588a70808f0b4dfad48e1aa66012b3'
 let baseURL = 'https://api.openweathermap.org/data/2.5/weather'
 
 
-let getWeatherAPI = (position) => {
-  fetch(
-    `${baseURL}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}`
-  )
-  .then((res) =>  res.json())
-  .then((data) => {
-    paragraph.innerText = JSON.stringify(data)
-  })
+// fetch api
 
+// fetch('').then(() => {}).then(() => {})
+
+const image = document.getElementById('img')
+let weatherData = ''
+
+
+
+// Geolocation API
+const getUserLocation = () => {
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(displayCurrentWeather)
+    } else {
+      alert('Geolocation is not supported by this browser.')
+    }
 }
 
+function displayCurrentWeather(position) {
+    fetch(
+      `${baseURL}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}`
+    )
+      .then((res) => res.json())
+      .then((data) => (weatherData = data))
+  }
+
 getUserLocation()
+
+
+img.src = `http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
+
+
+
 
 
 
